@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Gallery - MET BKC</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #ffe5e5; }
+    .navbar {
+      background-color: #dd2323;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+
+    .navbar img {
+      height: 40px;
+      margin-right: 15px;
+    }
+
+    .navbar h1 {
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 { text-align: center; color: #dd2323; }
+    label { font-weight: bold; margin-top: 20px; display: block; }
+    input[type="file"], textarea {
+      margin-top: 10px;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      background: #dd2323;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover { background: #b81e1e; }
+  </style>
+</head>
+<body>
+  
+  <div class="navbar">
+    <img src="/College/img/logo.jpg" alt="MET Logo">
+    <h1>MET Bhujbal Knowledge City</h1>
+  </div>
+
+  <div class="container">
+    <h2>Upload Gallery Image</h2>
+    <form>
+      <label for="galleryImage">Choose an image to upload</label>
+      <input type="file" id="galleryImage" name="galleryImage" accept="image/*" required>
+
+      <label for="imageDesc">Image Description</label>
+      <textarea id="imageDesc" name="imageDesc" rows="4" placeholder="Enter a short description of the image..."></textarea>
+
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+</body>
+</html>

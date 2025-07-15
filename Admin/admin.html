@@ -1,194 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Admin Dashboard - MET Bhujbal Knowledge City</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login - MET BKC</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-
     body {
-      display: flex;
-      min-height: 100vh;
-      background-color: #f4f6f9;
+      background: #ffe5e5;
+      font-family: Arial, sans-serif;
+      margin: 0;
     }
 
-    .sidebar {
-      width: 250px;
+    .navbar {
       background-color: #dd2323;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
       color: white;
-      padding: 20px 0;
-      position: fixed;
-      height: 100%;
     }
 
-    .sidebar h2 {
-      text-align: center;
-      margin-bottom: 30px;
+    .navbar img {
+      height: 40px;
+      margin-right: 15px;
     }
 
-    .sidebar a {
-      display: block;
-      padding: 12px 25px;
-      color: white;
-      text-decoration: none;
-      transition: background 0.3s;
+    .navbar h1 {
+      font-size: 22px;
+      margin: 0;
     }
 
-    .sidebar a:hover {
-      background-color: #b81e1e;
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 70px);
     }
 
-    .main {
-      margin-left: 250px;
+    .login-box {
+      background: #fff;
       padding: 30px;
-      flex-grow: 1;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
     }
 
-    .card {
-      background: white;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    h2 {
+      text-align: center;
+      color: #dd2323;
       margin-bottom: 20px;
     }
 
-    .card h3 {
-      margin-bottom: 10px;
-    }
-
-    .stats {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .stat-box {
-      flex: 1 1 200px;
-      background-color: #ffe5e5;
-      padding: 15px;
-      border-radius: 8px;
-      text-align: center;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    label {
-      font-weight: bold;
-    }
-
-    input, textarea, select {
+    input {
+      width: 100%;
       padding: 10px;
+      margin: 10px 0;
       border: 1px solid #ccc;
       border-radius: 5px;
     }
 
     button {
-      padding: 10px;
-      background-color: #dd2323;
+      width: 100%;
+      background: #dd2323;
       color: white;
+      padding: 10px;
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      font-weight: bold;
     }
 
     button:hover {
-      background-color: #b81e1e;
+      background: #b81e1e;
+    }
+
+    .error {
+      color: red;
+      text-align: center;
+      margin-top: 10px;
     }
   </style>
 </head>
-
 <body>
-  <div class="sidebar">
-    <h2>Admin Panel</h2>
-    <a href="#">Dashboard</a>
-    <a href="#">Add Student</a>
-    <a href="#">Add Staff</a>
-    <a href="#">Home Page</a>
-    <a href="#">Departments</a>
-    <a href="#">Courses</a>
-    <a href="#">Faculty</a>
-    <a href="#">News & Events</a>
-    <a href="#">Gallery</a>
-    <a href="#">Student Corner</a>
-    <a href="#">Alumni</a>
-    <a href="#">Contact Queries</a>
-    <a href="#">Settings</a>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <img src="/College/img/logo.jpg" alt="MET Logo">
+    <h1>MET Bhujbal Knowledge City</h1>
   </div>
 
-  <div class="main">
-    <h1>Welcome Admin</h1>
-
-    <div class="stats">
-      <div class="stat-box">
-        <h3>15</h3>
-        <p>Departments</p>
-      </div>
-      <div class="stat-box">
-        <h3>20</h3>
-        <p>Events</p>
-      </div>
-      <div class="stat-box">
-        <h3>245</h3>
-        <p>Enquiries</p>
-      </div>
-      <div class="stat-box">
-        <h3>38</h3>
-        <p>Faculty Members</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <h3>Add Student (Create Login Access)</h3>
-      <form>
-        <label for="studentName">Full Name:</label>
-        <input type="text" id="studentName" name="studentName" required />
-
-        <label for="studentEmail">Email (Username):</label>
-        <input type="email" id="studentEmail" name="studentEmail" required />
-
-        <label for="studentPass">Password:</label>
-        <input type="password" id="studentPass" name="studentPass" required />
-
-        <label for="studentDept">Department:</label>
-        <input type="text" id="studentDept" name="studentDept" required />
-
-        <button type="submit">Add Student</button>
-      </form>
-    </div>
-
-    <div class="card">
-      <h3>Add Staff (Create Login Access)</h3>
-      <form>
-        <label for="staffName">Full Name:</label>
-        <input type="text" id="staffName" name="staffName" required />
-
-        <label for="staffEmail">Email (Username):</label>
-        <input type="email" id="staffEmail" name="staffEmail" required />
-
-        <label for="staffPass">Password:</label>
-        <input type="password" id="staffPass" name="staffPass" required />
-
-        <label for="designation">Designation:</label>
-        <input type="text" id="designation" name="designation" required />
-
-        <label for="staffDept">Department:</label>
-        <input type="text" id="staffDept" name="staffDept" required />
-
-        <button type="submit">Add Staff</button>
-      </form>
+  <!-- Login Box -->
+  <div class="login-container">
+    <div class="login-box">
+      <h2>Admin Login</h2>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+    
+      <button onclick="login()">Login</button>
+      <p class="error" id="error-msg"></p>
     </div>
   </div>
+
+  <script>
+    function login() {
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+
+      // Check hardcoded credentials
+      if (email === 'admin@met.com' && password === 'admin123') {
+        localStorage.setItem('isLoggedIn', 'true');
+        window.location.href = 'dashboard.html';
+      } else {
+        document.getElementById('error-msg').innerText = 'Invalid credentials';
+      }
+    }
+  </script>
+
 </body>
-
 </html>

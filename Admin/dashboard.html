@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard - MET BKC</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffe5e5;
+    }
+
+    .navbar {
+      background-color: #dd2323;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+
+    .navbar img {
+      height: 40px;
+      margin-right: 15px;
+    }
+
+    .navbar h1 {
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 70px;
+      left: 0;
+      width: 200px;
+      height: calc(100vh - 70px);
+      background: #dd2323;
+      padding-top: 20px;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 12px 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .sidebar a:hover {
+      background-color: #b81e1e;
+    }
+
+    .main {
+      margin-left: 200px;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #dd2323;
+    }
+
+    .stats {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      flex: 1;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .stat-box h3 {
+      color: #dd2323;
+      font-size: 28px;
+    }
+
+    .quick-actions {
+      margin-top: 30px;
+    }
+
+    .quick-actions button {
+      background: #dd2323;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      margin-right: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .quick-actions button:hover {
+      background: #b81e1e;
+    }
+  </style>
+</head>
+<body onload="checkLogin()">
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <img src="/College/img/logo.jpg" alt="MET Logo" />
+    <h1>MET Bhujbal Knowledge City</h1>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="add_student.html">Add Student</a>
+    <a href="add_staff.html">Add Staff</a>
+    <a href="upload_gallery.html">Upload Gallery</a>
+    <a href="post_event.html">Post Event</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <h1>Welcome Admin</h1>
+
+    <div class="stats">
+      <div class="stat-box">
+        <h3>15</h3>
+        <p>Departments</p>
+      </div>
+      <div class="stat-box">
+        <h3>820</h3>
+        <p>Students</p>
+      </div>
+      <div class="stat-box">
+        <h3>120</h3>
+        <p>Staff Members</p>
+      </div>
+      <div class="stat-box">
+        <h3>58</h3>
+        <p>Enquiries</p>
+      </div>
+    </div>
+
+    <div class="quick-actions">
+      <button onclick="location.href='add_student.html'">Add Student</button>
+      <button onclick="location.href='add_staff.html'">Add Staff</button>
+      <button onclick="location.href='upload_gallery.html'">Upload Gallery</button>
+      <button onclick="location.href='post_event.html'">Post Event</button>
+    </div>
+  </div>
+
+  <script>
+    function checkLogin() {
+      if (localStorage.getItem('isLoggedIn') !== 'true') {
+        alert('Please login first.');
+        window.location.href = 'login.html';
+      }
+    }
+
+    function logout() {
+      localStorage.removeItem('isLoggedIn');
+      window.location.href = 'login.html';
+    }
+  </script>
+</body>
+</html>

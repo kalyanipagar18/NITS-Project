@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Staff - MET BKC</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffe5e5;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      background-color: #dd2323;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+    .navbar img {
+      height: 40px;
+      margin-right: 15px;
+    }
+    .navbar h1 {
+      font-size: 22px;
+      margin: 0;
+    }
+    .form-container {
+      background: white;
+      margin: 40px auto;
+      padding: 30px;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #dd2323;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      margin-top: 20px;
+      background: #dd2323;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #b81e1e;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <img src="/College/img/logo.jpg" alt="MET Logo">
+    <h1>MET Bhujbal Knowledge City</h1>
+  </div>
+
+  <div class="form-container">
+    <h2>Add Staff</h2>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+      <label for="dept">Department</label>
+      <input type="text" id="dept" name="dept" required>
+
+      <label for="designation">Designation</label>
+      <input type="text" id="designation" name="designation" required>
+
+      <label for="position">Position</label>
+      <input type="text" id="position" name="position" required>
+
+      <button type="submit">Add Staff</button>
+    </form>
+  </div>
+</body>
+</html>
