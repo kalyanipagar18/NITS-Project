@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bhujbal Knowledge City-MET Leagues of Colleges</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/jpeg" href="img/logo.jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header/Navbar -->
+   
+  <header>
+    <div class="top-bar">
+      <div class="logo-area">
+        <img src="img/logo.jpg" alt="MET Logo" class="logo-img" />
+      </div>
+      <nav>
+  <ul class="nav-menu">
+    <li><a href="/College/index.html"><i class="fas fa-home"></i> Home</a></li>
+
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle">About Us <i class="fas fa-caret-down"></i></a>
+      <ul class="dropdown-menu">
+        <li><a href="/Final-Project/trustee.html" target="_blank">Trustee's Welcome Note</a></li>
+        <li><a href="/Final-Project/chairman.html">A Message from the Chairman</a></li>
+        <li><a href="/Final-Project/faith-vision.html">Our Faith, Vision & Mission</a></li>
+        <li><a href="/Final-Project/why-choose-met.html">Why Choose MET?</a></li>
+        <li><a href="/Final-Project/accreditation.html">Our Accreditations & Partnerships</a></li>
+        <li><a href="/Final-Project/pdf/HR Hand Book.pdf">Employee HR Guide</a></li>
+        <li><a href="/Final-Project/pdf/Appraisal Policy HR.pdf" target="_blank">Performance Appraisal Policy</a></li>
+      </ul>
+    </li>
+
+   
+    <li class="dropdown">
+    <a href="#" class="dropdown-toggle">Institutes <i class="fas fa-caret-down"></i></a>
+    <ul class="dropdown-menu">
+      <li><a href="https://www.metmbse.ac.in/" target="_blank">Meena Bhujbal School of Excellence</a></li>
+      <li><a href="/project/Engineering/insitute-Engineering.html">MET Institute of Engineering</a></li>
+      <li><a href="/project/POLYTECHNIC/insitute-POLYTECHNIC.html">MET Institute of Polytechnic</a></li>
+      <li><a href="/project/B-TECH/insitute-B-TECH.html">MET Institute of B-Tech</a></li>
+      <li><a href="/project/MBA/insitute-MBA.html">MET Institute of Management</a></li>
+      <li><a href="/project/PHARMACY/insitute-PHARMACY.html">MET Institute of Pharmacy</a></li>
+      <li><a href="/project/Science/science.html" target="_blank">MET Junior College (HSC)</a></li>
+    </ul>
+    </li>
+
+    <li><a href="/College/infrastructure.html">Infrastructure</a></li>
+
+    <li><a href="/Final-Project/training-placement.html">Training & Placements</a></li>
+    <li><a href="/event/index.html">News & Events</a></li>
+    <li><a href="/project/contactus/photos/map.html">Contact Us</a></li>
+    <li><a href="/project/lo-in/loh-in.html">Login</a></li>
+  </ul>
+</nav>
+
+    </div>
+  </header>
+  <section class="hero">
+    <div class="slider-container">
+      <img id="sliderImage" src="" alt="Slider Image" />
+      <div class="left-arrow" onclick="prevSlide()">&#10094;</div>
+      <div class="right-arrow" onclick="nextSlide()">&#10095;</div>
+      <button class="fees-button">Online Fees Payment</button>
+    </div>
+  </section>
+
+  <!-- INSTITUTES Section -->
+  <section class="institutes-section">
+    <h2 class="section-title" data-aos="fade-down">INSTITUTES</h2>
+    <div class="institutes-wrapper">
+      <div class="institutes-list">
+        <ul>
+          <li data-aos="fade-right"><i class="fas fa-university icon"></i> MBSE (Meena Bhujbal School of Excellence)</li>
+          <li data-aos="fade-right" data-aos-delay="100"><i class="fas fa-university icon"></i> Institute of Engineering</li>
+          <li data-aos="fade-right" data-aos-delay="200"><i class="fas fa-university icon"></i> Institute of Technology, Polytechnic (B.Tech, Diploma)</li>
+          <li data-aos="fade-right" data-aos-delay="300"><i class="fas fa-university icon"></i> Institute of Management</li>
+          <li data-aos="fade-right" data-aos-delay="400"><i class="fas fa-university icon"></i> Institute of Information Technology (C-DAC-ATC)</li>
+        </ul>
+      </div>
+
+      <div class="institute-image-slider" data-aos="zoom-in">
+        <div class="institute-arrow left-arrow" onclick="prevInstituteSlide()">&#10094;</div>
+        <img id="instituteSlide" src="img/college.jpg" alt="Campus Image" />
+        <div class="institute-arrow right-arrow" onclick="nextInstituteSlide()">&#10095;</div>
+      </div>
+
+      <div class="institutes-list">
+        <ul>
+          <li data-aos="fade-left" data-aos-delay="100"><i class="fas fa-university icon"></i> Institute of Pharmacy</li>
+          <li data-aos="fade-left" data-aos-delay="200"><i class="fas fa-university icon"></i> Institute of D. Pharmacy (B.Pharm, D.Pharm)</li>
+          <li data-aos="fade-left" data-aos-delay="300"><i class="fas fa-university icon"></i> Bhujbal Academy of Science & Commerce</li>
+          <li data-aos="fade-left" data-aos-delay="400"><i class="fas fa-university icon"></i> School of Architecture & Interior Design</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<!-- card -->
+
+  <section class="card-container">
+    <div class="info-card">
+      <h3>ANNOUNCEMENTS</h3>
+      <div id="announcements" class="card-scroll">
+        <p>SBI Loan</p>
+        <p>ERP Online Admission Process & payment of Fees</p>
+        <p>Admission Open Contact Us on <br>+919881100099</p>
+        <p>MET's IOE receiving Extension of Accreditation Status from NBA for the Academic Years 2022-23 to 2024-25 to Computer Engineering Program.</p>
+      </div>
+    </div>
+
+    <div  id="awards" class="info-card">
+      <h3>AWARDS & ACHIEVEMENTS</h3>
+      <div class="card-scroll">
+        <p>MET BKC has received a prestigious Brand Excellence Award from ABP-MAZA</p>
+        <p>ECell MET BTech takes the crown of 1st Runner up at WEC organised by KITCoEK Kolhapur</p>
+        <p>MET's IOM has won 1st Runner Up Award In AIMS Convention held at New Delhi</p>
+        <p>ECell MET AIR 1 in National Entrepreneurship Challenge 2024</p>
+      </div>
+    </div>
+
+    <div  id="events" class="info-card">
+    <h3>EVENTS</h3>
+    <div class="card-scroll">
+      <p>MET Utsav organized on 1st February 2025 by Computer and IT Department of IOE</p>
+      <p>Alumni Meet conducted by IOE on 12th April 2025</p>
+      <p>Flutter Development Event by GDGC MET<br>
+         Venue: Lab 215, IOE<br>
+         Date: 11th to 13th April 2025</p>
+      <p>Inspirex 2025 – A Transformation Day of Entrepreneurial Learning and Innovation at MET's Institute of Technology<br>
+         Date: 10th April 2025</p>
+      </div>
+    </div>
+    </section>
+<!-- admission -->
+
+  <div class="admission-container">
+  <h1>ADMISSION</h1>
+
+  <div class="enquiry-list">
+    <p><strong>1. Admission Enquiry for MBSC</strong></p>
+    <p>Click on Link: <a href="https://forms.gle/w1VoocgpbigGiJvi7" target="_blank">https://forms.gle/w1VoocgpbigGijvJ7</a></p>
+    <p><strong>2. Admission Started for Diploma in Architecture</strong> <a href="#">Click Here</a></p>
+  </div>
+
+  <div class="form-section">
+    <h3>3. Professional Course Enquiry</h3>
+    <form>
+      <label for="programme">Programme</label>
+      <select id="programme">
+        <option>BE (Engineering)</option>
+        <option>B. Tech (Engineering)</option>
+        <option>B. Voc (Graphics & Multimedia)</option>
+        <option>B. Voc (Electronic Manufacturing Services)</option>
+        <option>ME</option>
+        <option>MCA</option>
+        <option>MBA</option>
+        <option>Polytechnic</option>
+        <option>CDAC-ACTS</option>
+        <option>D. Pharmacy (SPPU)</option>
+        <option>D. Pharmacy (Technological University)</option>
+        <option>B. Pharmacy (SPPU)</option>
+        <option>B. Pharmacy (Technological University)</option>
+        <option>M. Pharmacy (SPPU)</option>
+        <option>Pharm D.</option>
+        <option>Diploma in Architecture (3 Years)</option>
+        <option>Architecture</option>
+        <option>B. Design</option>
+        <option>Ph.D. (Engineering)</option>
+        <option>Ph.D. (Pharmacy)</option>
+        <option>Ph.D. (Management)</option>
+        <option>Jr. College (11th Science)</option>
+        <option>Jr. College (11th Commerce)</option>
+      </select>
+
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your full name" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="example@email.com" />
+
+      <label for="contact">Contact No.</label>
+      <input type="tel" id="contact" placeholder="10-digit mobile number" />
+
+      <label for="city">City Name</label>
+      <input type="text" id="city" placeholder="Enter your city" />
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="4" placeholder="Write your message here..."></textarea>
+
+      <div></div> <!-- Empty for grid alignment -->
+      <button type="submit">SUBMIT</button>
+    </form>
+  </div>
+</div>
+
+<!-- placement -->
+ <h2 class="section-title">CAMPUS PLACEMENT</h2>
+<div class="placement-cards">
+  <div class="placement-card" data-aos="zoom-in" data-aos-delay="100">
+    <h3 class="card-title">HIGHEST PACKAGE</h3>
+    <img class="card-img" id="card-img-1" src="img/CR11.jpeg" alt="Highest Package" />
+  </div>
+
+  <div class="placement-card" data-aos="zoom-in" data-aos-delay="100">
+    <h3 class="card-title">MET PLACEMENT STATISTICS</h3>
+    <img class="card-img" id="card-img-2" src="img/CDAC-Placement1.jpeg" alt="Placement Stats" />
+  </div>
+
+  <div class="placement-card" data-aos="zoom-in" data-aos-delay="100">
+    <h3 class="card-title">CURRENT RECRUITMENT</h3>
+    <img class="card-img" id="card-img-3" src="img/CR1.jpeg" alt="Recruitment" />
+  </div>
+</div>
+
+<!-- recruiters -->
+<section class="recruiters-section">
+  <h2>OUR RECRUITERS</h2>
+  <div class="carousel-container">
+    <button class="nav left">&#10094;</button>
+    <div class="carousel-wrapper">
+      <div class="carousel" id="carousel"></div>
+    </div>
+    <button class="nav right">&#10095;</button>
+  </div>
+  <div class="dots" id="dots"></div>
+</section>
+
+<!-- student -->
+ <section class="testimonial-section">
+    <h2>STUDENT SPEAK</h2>
+
+    <div class="testimonial-container">
+      <div class="slides fade">
+        <img src="img/khushbu-agrwal.jpeg" alt="Khushbu Agrawal" class="profile-img" />
+        <h3>Khushbu Agrawal</h3>
+        <p class="designation">BigData Analyst<br/>Volvo Group, Switzerland Zurich</p>
+        <p class="testimonial-text">
+          To the faculty, I will forever be obliged to MET IOE and the faculty for making me believe I can do it.
+          They have been very supportive, inspiring and challenging taskmasters for us. <br/>
+          To METians, If you are anyone like I was when I entered MET campus and the classroom on the very first day,
+          you are sitting there feeling a million different emotions, having a different million questions;
+          but let me tell you that you are here because you deserve to be, and because you can bring something new and exciting
+          to this diverse learning community. Study hard what interests you the most in the most undisciplined,
+          irreverent and original manner possible.
+        </p>
+      </div>
+
+      <div class="slides fade">
+        <img src="img/arpit-kale-150x150.jpeg" alt="Arpeet Kale" class="profile-img" />
+        <h3>Arpeet Kale</h3>
+        <p class="designation">Lead Software Engineer - Artificial Intelligence</p>
+        <p class="testimonial-text">
+          Congratulations to MET on successfully completing 30 years of providing excellent academic infrastructure and services.
+          I am grateful to have had such great faculty and staff during the time I spent at Department of Computer Engineering.
+        </p>
+      </div>
+
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+    
+<div>
+  <footer class="footer">
+    <div class="footer-content"> <!-- ADDED CONTAINER -->
+
+      <div class="footer-column" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">
+        <h3>ABOUT US</h3>
+        <ul>
+          <li><a href="#">From the Chairman's Desk</a></li>
+          <li><a href="#">Our Faith, Vision & Mission</a></li>
+          <li><a href="#">Advantage MET</a></li>
+          <li><a href="#">Affiliations & Accreditation</a></li>
+          <li><a href="#">HR Handbook</a></li>
+          <li><a href="#">Appraisal Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+        <h3>INSTITUTES</h3>
+        <ul>
+          <li><a href="#">Institute of Engineering</a></li>
+          <li><a href="#">Institute of Technology, Polytechnic</a></li>
+          <li><a href="#">Institute of Management</a></li>
+          <li><a href="#">Institute of Pharmacy</a></li>
+          <li><a href="#">Institute of D. Pharmacy</a></li>
+          <li><a href="#">Institute of Information Tech.</a></li>
+          <li><a href="#">Academy of Science & Commerce</a></li>
+          <li><a href="#">School of Architecture & Design</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="700">
+        <h3>IMPORTANT LINKS</h3>
+        <ul>
+          <li><a href="#">AICTE</a></li>
+          <li><a href="#">SPPU</a></li>
+          <li><a href="#">DBATU</a></li>
+          <li><a href="#">MSBTE</a></li>
+          <li><a href="#">DTE</a></li>
+          <li><a href="#">PCI</a></li>
+          <li><a href="#">COA</a></li>
+          <li><a href="#">CDAC</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column contact" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
+        <h3>CONTACT US</h3>
+        <p><strong>MET League of Colleges | Bhujbal Knowledge City</strong><br>
+          Adgaon | Govardhan, Nashik - 422 003 | 422 222<br>
+          Maharashtra, India</p>
+        <p>
+          Mobile: ‪+91 09881100099‬<br>
+          Adgaon Campus Tel: 0253-2303611<br>
+          Govardhan Campus Tel: 0253-2200300, 2200302<br>
+          For Hostel Inquiry: ‪+91 9372341038‬<br>
+          Email: <a href="mailto:enquiries@bkc.met.edu">enquiries@bkc.met.edu</a>
+        </p>
+      </div>
+
+    </div> <!-- END footer-content -->
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 MET League of Colleges. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+
+
+<!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+
+          AOS.init({
+    duration: 1000, // Duration of animations in milliseconds
+    once: false,    // Re-run animation every time it's scrolled into view
+    mirror: true    // Also animate on scroll up
+  });
+
+</script>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>

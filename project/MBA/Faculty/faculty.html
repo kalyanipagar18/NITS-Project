@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty</title>
+    <link rel="stylesheet" href="./facultu.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <img src="../photos/MET-LOGO.png" alt="MET Logo">
+        <ul>
+            <li><a href="../insitute-Engineering.html">Home</a></li>
+            <li><a href="../Vision-mission/visin-mission.html">Our Vision & Mission</a></li>
+            <li><a href="../principal-desk/principal-desk.html">From Principal Desk</a></li>
+            <li><a href="#Traning-&-placement">Traning & Placement</a></li>
+            <li><a href="#Alumini">Alumini</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content Wrapper -->
+    <div class="information">
+
+        <h1>1. MBA </h1>
+
+
+          <button class="dropdown-btn" onclick="toggleTable('facultyTable1', this)">Show Faculty Table</button>
+        <div class="table-container" id="facultyTable1">
+
+        
+            <table>
+                <caption>Faculty Information</caption>
+                <thead>
+                    <tr>
+                        <th>Sr.No.</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Designation</th>
+                        <th>Date of Joining</th>
+                        <th>Currently Associated with</th>
+                        <th>Nature of Association</th>
+                    </tr>
+                </thead>
+<tbody>
+  <tr><td>1</td><td>Dr. Nilesh Rameshchandra Berad</td><td>Director</td></tr>
+  <tr><td>2</td><td>Dr. Yogesh Uttam Gaikwad</td><td>Professor & Research Head</td></tr>
+  <tr><td>3</td><td>Dr. Atul Thombre</td><td>Professor & HOD</td></tr>
+  <tr><td>4</td><td>Mr. Vasudeo Mangesh Sawant</td><td>Professor of Practice</td></tr>
+  <tr><td>5</td><td>Dr. Mital S Bhayani</td><td>Associate Professor</td></tr>
+  <tr><td>6</td><td>Dr. Ms. Jyoti M. Singh</td><td>Associate Professor</td></tr>
+  <tr><td>7</td><td>Dr. Pooja Varma</td><td>Associate Professor</td></tr>
+  <tr><td>8</td><td>Dr. Namrata Harshal Deshmukh</td><td>Associate Professor</td></tr>
+  <tr><td>9</td><td>Dr. Nilesh Chhallare</td><td>Associate Professor</td></tr>
+  <tr><td>10</td><td>Dr. Kalyani Kapate</td><td>Associate Professor</td></tr>
+  <tr><td>11</td><td>Mr. Manav Agrawal</td><td>Assistant Professor</td></tr>
+  <tr><td>12</td><td>Mrs. Brototi Mistri</td><td>Assistant Professor</td></tr>
+  <tr><td>13</td><td>Prof. Santosh Raghunath Gaikwad</td><td>Assistant Professor</td></tr>
+  <tr><td>14</td><td>Mr. Upendra Dinesh Gawali</td><td>Assistant Professor</td></tr>
+  <tr><td>15</td><td>Dr. Shefali Bhujbal</td><td>Assistant Professor</td></tr>
+  <tr><td>16</td><td>Dr. Prabodhan Ulhas Patil</td><td>Assistant Professor</td></tr>
+  <tr><td>17</td><td>Dr. Harshada Parikshit Aurangabadkar</td><td>Assistant Professor</td></tr>
+  <tr><td>18</td><td>Dr. Pankaj Ashok Kapse</td><td>Assistant Professor</td></tr>
+  <tr><td>19</td><td>Mr. Deepaq Vasant Vartak</td><td>Assistant Professor</td></tr>
+  <tr><td>20</td><td>Mr. Zubin Sayyed</td><td>Assistant Professor</td></tr>
+  <tr><td>21</td><td>Ms. Komal Chinmay Gadhe</td><td>Assistant Professor</td></tr>
+  <tr><td>22</td><td>Ms. Swati Chetan Hase</td><td>Assistant Professor</td></tr>
+  <tr><td>23</td><td>Ms. Maitri Pratap Mavani</td><td>Assistant Professor</td></tr>
+  <tr><td>24</td><td>Mrs. Rachita Baid</td><td>Assistant Professor</td></tr>
+  <tr><td>25</td><td>Mr. Manake Ravindra Vinayak</td><td>Assistant Professor</td></tr>
+  <tr><td>26</td><td>CA Shubham Ramesh Chandak</td><td>Assistant Professor</td></tr>
+  <tr><td>27</td><td>Mr. Ravindra Deshmukh</td><td>Assistant Professor</td></tr>
+  <tr><td>28</td><td>Mr. Anil Kokate</td><td>Assistant Professor</td></tr>
+  <tr><td>29</td><td>Mr. Sachin Gharat</td><td>Assistant Professor</td></tr>
+  <tr><td>30</td><td>Mr. Madan Shantaram Jagzap</td><td>Assistant Professor</td></tr>
+</tbody>
+
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+          function toggleTable(tableId, btn) {
+        const table = document.getElementById(tableId);
+        if (table.style.display === "none" || table.style.display === "") {
+            table.style.display = "block";
+            btn.textContent = "Hide Faculty Table";
+        } else {
+            table.style.display = "none";
+            btn.textContent = "Show Faculty Table";
+        }
+    }
+    </script>
+
+</body>
+</html>
